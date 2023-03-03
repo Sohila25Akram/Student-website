@@ -1,0 +1,66 @@
+﻿@model secondProject.tblTeacher
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblTeacher</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tblDepartment.depName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tblDepartment.depName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tcname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tcname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tcage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tcage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tcaddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tcaddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tcemail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tcemail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telphone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telphone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
